@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right" >
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:paddingTop="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="right" >
+    
+        <RelativeLayout
+	        android:id="@+id/comment_text_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center" >
+
+	        <TextView
+	            android:id="@+id/comment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:paddingLeft="5dip"
+	            android:paddingRight="10dip"
+	            android:text="@string/apertain_fb_message"
+	            android:textColor="@android:color/primary_text_light" />
+
+	    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/comment_text_layout"
+            android:layout_marginTop="10dip"
+            android:background="#111111"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:paddingLeft="5dip" >
+
+	    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delivered_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_text_layout"
+            android:gravity="center"
+            android:layout_marginTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip" >
+
+		   <ImageView
+                android:id="@+id/delivered_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dip"
+                android:layout_marginLeft="6dip"
+                android:paddingBottom="5dip"
+                android:paddingRight="5dip"
+                android:src="@drawable/sent" />
+
+	        <TextView
+	            android:id="@+id/delivered_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/delivered_image"
+	            android:layout_marginTop="5dip"
+	            android:text="@string/apertain_sent"
+	            android:textSize="10sp" />
+        </RelativeLayout>
+	</RelativeLayout>
+	</LinearLayout>
+    
+</LinearLayout>

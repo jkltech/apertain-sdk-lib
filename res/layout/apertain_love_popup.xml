@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apertain_love_popup_base_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+    
+    <RelativeLayout 
+        android:id="@+id/apertain_love_popup_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+	
+		<TextView 
+	        android:id="@+id/apertain_love_popup_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/apertain_text_extra_large"
+	        android:layout_centerHorizontal="true" />
+		
+		<RelativeLayout 
+		    android:id="@+id/apertain_love_popup_button_relative"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/apertain_love_popup_tv" >
+			
+		    <Button 
+			    android:id="@+id/apertain_love_popup_yes_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:textSize="@dimen/apertain_text_large" />
+			    <!-- android:layout_below="@id/apertain_love_popup_tv" /> -->
+		
+			<Button 
+			    android:id="@+id/apertain_love_popup_no_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:textSize="@dimen/apertain_text_large" />
+				<!-- android:layout_below="@id/apertain_love_popup_tv" /> -->
+		    	    
+		</RelativeLayout>
+			
+    </RelativeLayout>
+
+</RelativeLayout>

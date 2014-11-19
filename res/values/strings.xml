@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Apertain Android SDK</string>
+
+   	<string name="apertain_hi">Hi</string>
+    <string name="apertain_ok">OK</string>
+    <string name="apertain_yes">Yes</string>
+    <string name="apertain_no">No</string>
+    <string name="apertain_skip">Skip</string>
+    <string name="apertain_you">You</string>
+    <string name="apertain_reply">Reply</string>
+    <string name="apertain_regards">Regards</string>
+    <string name="apertain_best_regards">Best Regards</string>
+    <string name="apertain_close">Close</string>
+    <string name="apertain_developer">Developer</string>
+    <string name="apertain_oops">Oops!</string>
+    <string name="apertain_send">Send</string>
+    <string name="apertain_give_feedback">Give Your Valuable Feedback</string>
+    <string name="apertain_thanks">Thanks!</string>
+    <string name="apertain_no_thanks">No thanks</string>
+    <string name="apertain_thank_you">Thank You</string>
+    <string name="apertain_were_sorry">We\'re Sorry!</string>
+    <string name="apertain_required">Required</string>
+    <string name="apertain_optional">Optional</string>
+    <string name="apertain_sending">Sending…</string>
+    <string name="apertain_version">Apertain Version %s</string>
+    <string name="apertain_newline">\n</string>
+    <string name="apertain_vocabul_team">Vocabul Team</string>
+
+    <string name="apertain_edittext_hint_email">Your Email Address</string>
+    <string name="apertain_edittext_hint_email_required">Email Address (required)</string>
+    <string name="apertain_edittext_hint_enter_message">Enter Message</string>
+    <string name="apertain_send_anonymous_checkbox">Send Anonymously</string>
+
+    <string name="apertain_powered_by_apertain">Powered by apertain</string>
+    <string name="apertain_about_title">About Apertain</string>
+    <string name="apertain_about_description">Apertain is a feedback and communication service which allows the people who make this app to quickly get your feedback and better listen to you.</string>
+    <string name="apertain_about_description_link">Find out more at apertain.com</string>
+    <string name="apertain_about_privacy">Your feedback is hosted by Apertain and is subject to Apertain\'s privacy policy and the privacy policy of the developer of this app.</string>
+    <string name="apertain_about_privacy_link">Visit Apertain\'s Privacy Policy</string>
+
+    <string name="apertain_do_you_love_this_app">Do you love %s?</string>
+
+    <string name="apertain_rating_message">We\'re so happy to hear that you love %s! It\'d be really helpful if you rated us. Thanks so much for spending some time with us.</string>
+    <string name="apertain_rate_this_app">Rate %s</string>
+    <string name="apertain_rating_remind">Remind Me Later</string>
+    <string name="apertain_rating_error">We\'re unable to find this app in the store. Please visit the store to find and rate it.</string>
+
+    <string name="apertain_intro_dialog_title_no_love">@string/apertain_were_sorry</string>
+    <string name="apertain_intro_dialog_title_default">Thanks for your feedback!</string>
+    <string name="apertain_intro_dialog_title_1">Glad to Connect with You!</string>
+    <string name="apertain_intro_dialog_title_2">Welcome to Message Center!</string>
+    <string name="apertain_intro_dialog_title_3">Thanks for Connecting with us!</string>
+    <string name="apertain_intro_dialog_title_4">We are here to Help!</string>
+    <string name="apertain_intro_dialog_title_5">Glad we could Help You!</string>
+    <string name="apertain_intro_dialog_title_6">We are here for You!</string>
+    <string name="apertain_intro_dialog_body">Please let us know how to make %s better for you!</string>
+    <string name="apertain_intro_dialog_edittext_hint">Tell us how we can help. (Required)</string>
+
+    <string name="apertain_thank_you_dialog_body">Your response has been saved in the Message Center, where you\'ll be able to view replies and send us other messages.</string>
+    <string name="apertain_thank_you_dialog_body_message_center_disabled">Thank you for your feedback!</string>
+    <string name="apertain_thank_you_dialog_body_message_center_disabled_email_required">We\'ll be in touch via email.</string>
+    <string name="apertain_thank_you_dialog_close">Close</string>
+    <string name="apertain_thank_you_dialog_view_messages">View Messages</string>
+
+    <string name="apertain_dialog_email_validation_failed_title">Invalid Email Address</string>
+    <string name="apertain_dialog_email_validation_failed_body">Please enter a valid email address.</string>
+
+    <string name="apertain_survey_header">Survey</string>
+    <string name="apertain_survey_singleline_hint">Enter an answer…</string>
+    <string name="apertain_survey_send_response">Send Response</string>
+
+    <string name="apertain_fb_message">Feedback Message</string>
+    <string name="apertain_resp_message">Response Message</string>
+    <string name="apertain_message_center_title">Message Center</string>
+    <string name="apertain_message_center_compose_hint">Type a message…</string>
+    <string name="apertain_message_center_attachment_title">Send image?</string>
+
+    <!-- This is a Java format. -->
+    <string name="apertain_message_sent_timestamp_format">MMM dd, yyyy h:mma</string>
+
+    <string name="apertain_message_auto_body_manual">This is our Message Center. If you have questions, suggestions, concerns, or just want to get in touch, please send us a message. We love talking with our customers!</string>
+    <string name="apertain_message_auto_body_no_love">What can we do to ensure that you love our app? We appreciate your constructive feedback.</string>
+
+    <string name="apertain_rating_provider_no_google_play">Google Play was not found. Please install Google Play before rating this app.</string>
+    <string name="apertain_rating_provider_no_amazon_appstore">Amazon Appstore was not found. Please install Amazon Appstore before rating this app.</string>
+    <string name="apertain_rating_provider_no_mikandi">MiKandi Market was not found. Please install MiKandi Market before rating this app.</string>
+	<string name="apertain_more">More&#8230;</string>
+	<string name="apertain_not_yet_sent">Scheduled...</string>
+	<string name="apertain_sent">Sent.</string>
+	<string name="apertain_viewed">Seen.</string>
+
+	<string name="apertain_connect_to_internet_to_post_fb">Please connect to Internet to Post the Feedback</string>
+	
+</resources>

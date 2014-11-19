@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+    
+    <RelativeLayout 
+        android:id="@+id/apertain_feedback_popup_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+	
+		<TextView 
+	        android:id="@+id/apertain_feedback_heading_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true" />
+		
+		<TextView 
+	        android:id="@+id/apertain_feedback_sub_heading_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/apertain_feedback_heading_tv" />
+		
+		<!-- <EditText 
+		    android:id="@+id/apertain_feedback_mailid_et"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:inputType="textEmailAddress"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/apertain_feedback_sub_heading_tv" />
+
+		<CheckBox 
+		    android:id="@+id/apertain_feedback_checkbox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/apertain_feedback_mailid_et" />
+		
+		<TextView 
+		    android:id="@+id/apertain_feedback_content_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/apertain_feedback_mailid_et" /> -->
+				
+		<EditText 
+		    android:id="@+id/apertain_feedback_content_et"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:inputType="textMultiLine"
+		    android:layout_alignParentLeft="true"
+		    android:gravity="top"
+		    android:layout_below="@id/apertain_feedback_sub_heading_tv" />
+		
+		<Button 
+		    android:id="@+id/apertain_feedback_popup_yes_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@id/apertain_feedback_content_et" />
+	
+		<Button 
+		    android:id="@+id/apertain_feedback_popup_no_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/apertain_feedback_content_et" />
+	
+    </RelativeLayout>
+
+</RelativeLayout>

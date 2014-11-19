@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+    
+    <RelativeLayout 
+        android:id="@+id/apertain_rating_popup_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff7373"
+        android:layout_centerInParent="true" >
+
+		<TextView 
+	        android:id="@+id/apertain_rating_popup_heading_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true" />
+	        	
+		<TextView 
+	        android:id="@+id/apertain_rating_popup_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/apertain_rating_popup_heading_tv" />
+		
+		<Button 
+		    android:id="@+id/apertain_rating_popup_rate_now_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/apertain_rating_popup_tv" />
+	
+		<Button 
+		    android:id="@+id/apertain_rating_popup_rate_later_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/apertain_rating_popup_rate_now_button" />
+	
+		<Button 
+		    android:id="@+id/apertain_rating_popup_no_thanks_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/apertain_rating_popup_rate_later_button" />
+		
+    </RelativeLayout>
+
+</RelativeLayout>
