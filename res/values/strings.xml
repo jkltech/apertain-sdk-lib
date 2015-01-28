@@ -48,7 +48,7 @@
     <string name="apertain_intro_dialog_title_no_love">@string/apertain_were_sorry</string>
     <string name="apertain_intro_dialog_title_default">Thanks for your feedback!</string>
     <string name="apertain_intro_dialog_title_1">Glad to Connect with You!</string>
-    <string name="apertain_intro_dialog_title_2">Welcome to Message Center!</string>
+    <string name="apertain_intro_dialog_title_2">Welcome to App Support Chatter!</string>
     <string name="apertain_intro_dialog_title_3">Thanks for Connecting with us!</string>
     <string name="apertain_intro_dialog_title_4">We are here to Help!</string>
     <string name="apertain_intro_dialog_title_5">Glad we could Help You!</string>
@@ -85,10 +85,12 @@
     <string name="apertain_rating_provider_no_amazon_appstore">Amazon Appstore was not found. Please install Amazon Appstore before rating this app.</string>
     <string name="apertain_rating_provider_no_mikandi">MiKandi Market was not found. Please install MiKandi Market before rating this app.</string>
 	<string name="apertain_more">More&#8230;</string>
-	<string name="apertain_not_yet_sent">Scheduled...</string>
+	<string name="apertain_not_yet_sent">Scheduled&#8230;</string>
 	<string name="apertain_sent">Sent.</string>
 	<string name="apertain_viewed">Seen.</string>
 
 	<string name="apertain_connect_to_internet_to_post_fb">Please connect to Internet to Post the Feedback</string>
+	
+	<string name="powered_by_apertain">Powered by A(P)ertain</string>
 	
 </resources>

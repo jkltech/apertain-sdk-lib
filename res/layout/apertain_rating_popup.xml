@@ -45,7 +45,15 @@
 		    android:layout_height="wrap_content"
 		    android:layout_centerHorizontal="true"
 		    android:layout_below="@id/apertain_rating_popup_rate_later_button" />
-		
-    </RelativeLayout>
 
+		<TextView
+        	android:id="@+id/apertain_rating_popup_powered_by_apertain_tv"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_below="@id/apertain_rating_popup_no_thanks_button"
+        	android:text="@string/powered_by_apertain" />
+				
+    </RelativeLayout>
+    
 </RelativeLayout>

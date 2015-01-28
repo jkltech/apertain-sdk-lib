@@ -33,70 +33,75 @@
 		        android:layout_alignParentRight="true" />
 		</RelativeLayout>
         	
-        <RelativeLayout 
-            android:id="@+id/apertain_message_center_content_relative"
+        <ScrollView 
+            android:id="@+id/apertain_app_support_chatter_scroll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/apertain_message_center_topbar_relative" >
-			
-            <TextView 
-                android:id="@+id/apertain_more_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="10dip"
-                android:text="@string/apertain_more" />
-			<ListView
-        		android:id="@+id/apertain_message_center_listview"
-        		android:layout_width="match_parent"
-        		android:layout_height="wrap_content"
-        		android:layout_below="@+id/apertain_more_button"
-        		android:stackFromBottom="true"
-        		android:transcriptMode="alwaysScroll" >
-    		</ListView>
-            
-            <!-- 
-			<ScrollView
-	            android:id="@+id/apertain_message_center_scrollview"
+        
+	        <RelativeLayout 
+	            android:id="@+id/apertain_message_center_content_relative"
 	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-				android:layout_centerHorizontal="true" >
+	            android:layout_height="wrap_content" >				
 	            
-			    <LinearLayout 
-			        android:id="@+id/apertain_message_center_messages_relative"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:orientation="vertical" >
-			        
-			    </LinearLayout>
-	        </ScrollView>
-	        -->
-
-			<RelativeLayout
-			    android:id="@+id/apertain_message_center_bottom_fbedit_send"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:layout_alignParentBottom="true"
-			    android:layout_below="@+id/apertain_message_center_listview" >	
-
-			    <Button 
-				    android:id="@+id/apertain_message_center_send_button"
+	            <TextView 
+	                android:id="@+id/apertain_more_button"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:padding="10dip"
+	                android:text="@string/apertain_more" />
+				
+				<ListView
+	        		android:id="@+id/apertain_message_center_listview"
+	        		android:layout_width="match_parent"
+	        		android:layout_height="wrap_content"
+	        		android:layout_below="@+id/apertain_more_button"
+	        		android:stackFromBottom="true"
+	        		android:transcriptMode="alwaysScroll"
+	        		android:layout_alignParentLeft="true" >
+	    		</ListView>
+	
+				<RelativeLayout
+				    android:id="@+id/apertain_message_center_bottom_fbedit_send"
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
-				    android:layout_alignParentRight="true"
-				    android:layout_alignParentBottom="true" />
-			
-				<EditText 
-				    android:id="@+id/apertain_message_center_edittext"
-				    android:layout_width="wrap_content"
-				    android:layout_height="wrap_content"
-				    android:inputType="textMultiLine"
-				    android:gravity="top"
-				    android:layout_alignParentLeft="true"
-				    android:layout_alignParentBottom="true" />
-            </RelativeLayout>
-        </RelativeLayout>
+				    android:layout_centerHorizontal="true"
+				    android:layout_below="@+id/apertain_message_center_listview" >	
+	
+					<EditText 
+					    android:id="@+id/apertain_message_center_edittext"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+					    android:imeOptions=""
+					    android:focusableInTouchMode="true"
+					    android:maxLines="4"
+					    android:gravity="top"
+					    android:layout_alignParentLeft="true">
+					</EditText>
+					
+					<Button 
+					    android:id="@+id/apertain_message_center_send_button"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_centerVertical="true"
+					    android:layout_toRightOf="@id/apertain_message_center_edittext" />
+					
+	            </RelativeLayout>
+	
+			</RelativeLayout>
+
+	    </ScrollView>
+	        	
+		<TextView
+        	android:id="@+id/apertain_message_center_popup_powered_by_apertain_tv"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:text="@string/powered_by_apertain"
+        	android:layout_below="@id/apertain_app_support_chatter_scroll" />
 	
     </RelativeLayout>
 

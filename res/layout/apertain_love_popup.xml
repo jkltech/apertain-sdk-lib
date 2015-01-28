@@ -42,6 +42,21 @@
 				<!-- android:layout_below="@id/apertain_love_popup_tv" /> -->
 		    	    
 		</RelativeLayout>
+		
+		<RelativeLayout
+		    android:id="@+id/apertain_love_popup_ad_relative"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@id/apertain_love_popup_button_relative" >
+		    
+		    <TextView 
+		        android:id="@+id/apertain_love_popup_powered_by_apertain_tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/powered_by_apertain" />
+		    
+		</RelativeLayout>
 			
     </RelativeLayout>
 
