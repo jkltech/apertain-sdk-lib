@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Apertain Android SDK</string>
+    <string name="apertain_app_name">Apertain Android SDK</string>
 
    	<string name="apertain_hi">Hi</string>
     <string name="apertain_ok">OK</string>
