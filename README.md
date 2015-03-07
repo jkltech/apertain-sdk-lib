@@ -1,6 +1,3 @@
-apertain-sdk-lib
-================
-
 A(P)ertain SDK v1.0 for Android - Getting Started
 =================================================
 
