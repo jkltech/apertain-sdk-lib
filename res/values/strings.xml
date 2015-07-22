@@ -1,5 +1,5 @@
 <resources>
-    <string name="apertain_app_name">Apertain Android SDK</string>
+    <string name="apertain_app_name">A(P)ertain Android SDK</string>
 
    	<string name="apertain_hi">Hi</string>
     <string name="apertain_ok">OK</string>
@@ -29,6 +29,7 @@
     <string name="apertain_edittext_hint_email">Your Email Address</string>
     <string name="apertain_edittext_hint_email_required">Email Address (required)</string>
     <string name="apertain_edittext_hint_enter_message">Enter Message</string>
+    <string name="apertain_editext_hint_type_message">Type a Message</string>
     <string name="apertain_send_anonymous_checkbox">Send Anonymously</string>
 
     <string name="apertain_powered_by_apertain">Powered by apertain</string>
@@ -85,12 +86,14 @@
     <string name="apertain_rating_provider_no_amazon_appstore">Amazon Appstore was not found. Please install Amazon Appstore before rating this app.</string>
     <string name="apertain_rating_provider_no_mikandi">MiKandi Market was not found. Please install MiKandi Market before rating this app.</string>
 	<string name="apertain_more">More&#8230;</string>
+	<string name="load_more">Load more Conversation</string>
 	<string name="apertain_not_yet_sent">Scheduled&#8230;</string>
 	<string name="apertain_sent">Sent.</string>
 	<string name="apertain_viewed">Seen.</string>
 
 	<string name="apertain_connect_to_internet_to_post_fb">Please connect to Internet to Post the Feedback</string>
 	
-	<string name="powered_by_apertain">Powered by A(P)ertain</string>
+	<!-- <string name="powered_by_apertain">Powered by A(P)ertain</string> -->
+	<string name="inapp_support_welcome_message">Welcome to Support %s, \n Let us know how we can Help you Today!</string>
 	
 </resources>

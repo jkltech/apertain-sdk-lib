@@ -3,7 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="right"
-    android:gravity="right" >
+    android:id="@+id/listitem_baselayout"
+    android:gravity="right" 
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/date_text_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/wrapper"
@@ -34,10 +50,31 @@
 	            android:paddingLeft="5dip"
 	            android:paddingRight="10dip"
 	            android:text="@string/apertain_fb_message"
-	            android:textColor="@android:color/primary_text_light" />
+	            android:textColor="@android:color/primary_text_light" />	        
+	        
+	        <!-- 
+	        <TextView
+	            android:id="@+id/delivered_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/comment"
+	            android:layout_marginTop="5dip"
+	            android:textSize="10sp" />
+	        
+	        <ImageView 
+	            android:id="@+id/delivered_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="9dip"
+	            android:layout_marginLeft="6dip"
+	            android:paddingBottom="5dip"
+	            android:paddingRight="5dip"
+	            android:layout_toRightOf="@id/delivered_status"
+	            android:src="@drawable/sent"/> -->
 
 	    </RelativeLayout>
 
+        <!-- 
         <RelativeLayout
             android:id="@+id/comment_line"
             android:layout_width="match_parent"
@@ -49,20 +86,19 @@
             android:paddingTop="5dip"
             android:paddingLeft="5dip" >
 
-	    </RelativeLayout>
+	    </RelativeLayout> -->
 
         <RelativeLayout
             android:id="@+id/delivered_status_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/comment_text_layout"
-            android:gravity="center"
-            android:layout_marginTop="5dip"
-            android:paddingBottom="5dip"
+            android:gravity="right"            
             android:paddingLeft="5dip"
             android:paddingTop="5dip" >
 
-		   <ImageView
+             
+		 <!--  <ImageView
                 android:id="@+id/delivered_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,16 +106,28 @@
                 android:layout_marginLeft="6dip"
                 android:paddingBottom="5dip"
                 android:paddingRight="5dip"
-                android:src="@drawable/sent" />
-
+                android:src="@drawable/sent" /> -->
+	        
+	        <ImageView 
+	            android:id="@+id/delivered_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="9dip"
+	            android:layout_marginLeft="6dip"
+	            android:paddingRight="5dip"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/sent"/>
+	        
 	        <TextView
 	            android:id="@+id/delivered_status"
 	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:layout_toRightOf="@id/delivered_image"
+	            android:layout_height="wrap_content"	            
 	            android:layout_marginTop="5dip"
 	            android:text="@string/apertain_sent"
-	            android:textSize="10sp" />
+	            android:layout_toLeftOf="@id/delivered_image"
+	            />
+	        
+	        
         </RelativeLayout>
 	</RelativeLayout>
 	</LinearLayout>

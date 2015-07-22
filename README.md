@@ -177,3 +177,14 @@ Here, you have the code for stopping the tracking of a process as it completes.
 	Example: Apertain.stopProcess(“In-App-Purchase”, this);
 
 **Note**: All Process tracking are ceased when the Activity which starts the process tracking is stopped and destroyed.
+
+### 7. App Analytics Uploader Service
+
+A(P)ertain uses a background process to initiate uploading of App Analytics parameters into the A(P)ertain Server to analyze and provide insights into App User Behavior. To enable this the Uploader Service has to be initiated within the AndroidManifest.xml on every App.
+
+Please enter the below tags within the Application tag of your App to enable the UploadService for A(P)ertain.
+
+	<service 
+	    android:name="com.jkl.apertain.service.UploadService"
+	    android:label="UploadService" >
+	</service>

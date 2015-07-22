@@ -3,7 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="left"
-    android:gravity="left" >
+    android:id="@+id/listitem_baselayout"
+    android:gravity="left"
+    android:orientation="vertical" >
+    
+    <!-- <RelativeLayout
+        android:id="@+id/response_date_text_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        
+        <TextView 
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout> -->
 
     <LinearLayout
         android:id="@+id/wrapper"
@@ -37,7 +53,7 @@
 	            android:textColor="@android:color/primary_text_light" />
 
 	    </RelativeLayout>
-
+		<!-- 
         <RelativeLayout
             android:id="@+id/comment_line"
             android:layout_width="match_parent"
@@ -49,14 +65,14 @@
             android:paddingTop="5dip"
             android:paddingLeft="5dip" >
 
-	    </RelativeLayout>
+	    </RelativeLayout> -->
 
         <RelativeLayout
             android:id="@+id/response_status_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/comment_text_layout"
-            android:gravity="center"
+            android:gravity="right"
             android:layout_marginTop="5dip"
             android:paddingBottom="5dip"
             android:paddingLeft="5dip"
