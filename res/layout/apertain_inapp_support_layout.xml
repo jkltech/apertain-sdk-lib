@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apertain_inapp_support_base_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+    
+    <RelativeLayout 
+        android:id="@+id/apertain_inapp_support_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout 
+            android:id="@+id/apertain_inapp_support_topbar_relative" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" 
+            android:layout_centerHorizontal="true">
+            
+            <ImageView 
+			    android:id="@+id/apertain_inapp_support_icon"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"/>
+
+			<TextView 
+		        android:id="@+id/apertain_inapp_support_heading_tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_toRightOf="@+id/apertain_inapp_support_icon" />
+			
+			<Button
+		        android:id="@+id/apertain_inapp_support_refresh_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true" />
+		</RelativeLayout>
+		
+       <!--  <RelativeLayout 
+             android:id="@+id/apertain_inapp_load_more_relative"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/apertain_inapp_support_topbar_relative" >
+            
+            <RelativeLayout 
+                 android:id="@+id/apertain_inapp_support_inner_load_more_relative"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 >
+                 
+                <TextView 
+	              android:id="@+id/apertain_inapp_support_more_button"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_centerInParent="true"		               
+	              android:text="@string/load_more"/>
+                 
+            </RelativeLayout>    
+	   </RelativeLayout> -->
+        	
+		<ScrollView 
+            android:id="@+id/apertain_app_support_chatter_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/apertain_inapp_support_topbar_relative" >
+			
+		    <RelativeLayout 
+		        android:id="@+id/apertain_inapp_support_center_relative"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        >
+        
+		        <RelativeLayout 
+		            android:id="@+id/apertain_inapp_support_content_relative"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >				
+		            
+		            <!-- 
+		            <TextView 
+		                android:id="@+id/apertain_inapp_support_more_button"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:text="@string/apertain_more" /> -->
+					
+					<ListView
+		        		android:id="@+id/apertain_inapp_support_listview"
+		        		android:layout_width="match_parent"
+		        		android:layout_height="wrap_content"
+		        		android:divider="@null"
+		        		android:dividerHeight="0dp"
+		        		android:stackFromBottom="true"
+		        		android:transcriptMode="alwaysScroll"
+		        		android:layout_alignParentLeft="true" >
+		    		</ListView>
+			
+					<RelativeLayout
+					   android:id="@+id/apertain_inapp_support_bottom_fbedit_send"
+					   android:layout_width="wrap_content"
+					   android:layout_height="wrap_content"
+					   android:layout_centerHorizontal="true"
+					   android:layout_below="@+id/apertain_inapp_support_listview" >	
+			   
+						<RelativeLayout 
+							android:id="@+id/apertain_inapp_support_edittext_relative"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentBottom="true">
+							
+							<EditText 
+							    android:id="@+id/apertain_inapp_support_edittext"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:inputType="textAutoCorrect|textCapSentences|textMultiLine|textNoSuggestions"
+							    android:imeOptions="flagNoFullscreen"
+							    android:focusableInTouchMode="true"
+							    android:scrollHorizontally="false"
+							    android:scrollbars="vertical"
+							    android:lines="5"
+							    android:minLines="2"
+							    android:maxLines="10"
+							    android:gravity="center_vertical"
+							    android:layout_alignParentLeft="true"
+							    android:layout_centerVertical="true"
+							    android:background="#00000000">
+							</EditText>
+								
+						</RelativeLayout>
+					
+						<RelativeLayout 
+						    android:id="@+id/apertain_inapp_support_send_button_relative"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content" 
+						    android:layout_toRightOf="@id/apertain_inapp_support_edittext_relative" 
+						    android:layout_alignParentBottom="true">
+								
+						    	
+							<Button 
+							    android:id="@+id/apertain_inapp_support_send_button"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:layout_centerInParent="true"/>
+						    
+						</RelativeLayout>			
+							
+						
+					</RelativeLayout>
+				</RelativeLayout>
+				
+				<TextView
+		        	android:id="@+id/apertain_inapp_support_powered_by_apertain_tv"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_centerHorizontal="true"
+		        	android:layout_alignParentBottom="true"
+		        	android:layout_below="@id/apertain_inapp_support_content_relative"  />
+				
+				</RelativeLayout>
+		
+		</ScrollView>
+	
+    </RelativeLayout>
+</RelativeLayout>
