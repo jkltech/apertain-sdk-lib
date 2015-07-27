@@ -66,14 +66,14 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_centerHorizontal="true" 
-			android:layout_below="@id/apertain_message_center_topbar_relative" > 
-	            
+			android:layout_below="@id/apertain_message_center_topbar_relative">
+			
 		    <RelativeLayout 
 		        android:id="@+id/apertain_message_center_relative"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_centerInParent="true" >
-		
+		        
 		        <RelativeLayout 
 		            android:id="@+id/apertain_message_center_content_relative"
 		            android:layout_width="wrap_content"
@@ -92,17 +92,19 @@
 			                android:text="@string/load_more"/>
 		                
 		            </RelativeLayout> -->
-		            				
-					<ListView
-		        		android:id="@+id/apertain_message_center_listview"
-		        		android:layout_width="match_parent"
-		        		android:layout_height="wrap_content"	        		
-		        		android:stackFromBottom="true"
-		        		android:divider="@null"
-		        		android:dividerHeight="0dp"
-		        		android:transcriptMode="alwaysScroll"
-		        		android:layout_alignParentLeft="true" >
-		    		</ListView>
+		            
+						<ListView
+			        		android:id="@+id/apertain_message_center_listview"
+			        		android:layout_width="match_parent"
+			        		android:layout_height="wrap_content"	        		
+			        		android:stackFromBottom="true"
+			        		android:divider="@null"
+			        		android:dividerHeight="0dp"
+			        		android:transcriptMode="alwaysScroll"
+			        		android:layout_alignParentLeft="true" >
+			    		</ListView>
+		    		
+						
 		    		
 					<!-- <ScrollView 
 						android:id="@+id/apertain_app_support_chatter_edittext_scroll"
@@ -113,7 +115,7 @@
 		
 					<RelativeLayout
 					    android:id="@+id/apertain_message_center_bottom_fbedit_send"
-					    android:layout_width="wrap_content"
+					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
 					    android:layout_centerHorizontal="true"
 					    android:layout_below="@+id/apertain_message_center_listview" >	
@@ -145,13 +147,21 @@
 							</EditText> 
 					        
 					    </RelativeLayout>
-						
+					    
+					    <!-- <Button 
+						    android:id="@+id/apertain_message_center_send_button"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:layout_centerVertical="true"
+						    android:layout_alignParentRight="true">
+						</Button> -->
+							
 						<RelativeLayout 
 						    android:id="@+id/apertain_message_center_send_button_relative"
 						    android:layout_width="wrap_content"
 						    android:layout_height="wrap_content" 
-						    android:layout_toRightOf="@id/apertain_message_center_edittext_relative" 
-						    android:layout_alignParentBottom="true">
+						    android:layout_toRightOf="@id/apertain_message_center_edittext_relative"
+						    android:layout_centerVertical="true">
 						    
 						    <Button 
 							    android:id="@+id/apertain_message_center_send_button"
@@ -160,14 +170,14 @@
 							    android:layout_centerInParent="true" >
 							</Button>
 						    
-						</RelativeLayout>					
+						</RelativeLayout>				
 						
 		            </RelativeLayout>
 		            
 					<!-- </ScrollView> -->
-					
 		
 				</RelativeLayout>
+				
 	
 		        <!-- <RelativeLayout 
 		             android:id="@+id/load_more_relative"

@@ -7,19 +7,19 @@
     android:gravity="left"
     android:orientation="vertical" >
     
-    <!-- <RelativeLayout
-        android:id="@+id/response_date_text_relative"
+     <RelativeLayout
+        android:id="@+id/date_text_relative"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
         
         <TextView 
-            android:id="@+id/date_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/date_text"
             android:layout_centerInParent="true"/>
         
-    </RelativeLayout> -->
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/wrapper"

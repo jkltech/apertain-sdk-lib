@@ -95,5 +95,7 @@
 	
 	<!-- <string name="powered_by_apertain">Powered by A(P)ertain</string> -->
 	<string name="inapp_support_welcome_message">Welcome to Support %s, \n Let us know how we can Help you Today!</string>
+	<string name="jkl_tech_credit">Special Thanks: JKL Technologies Pvt Ltd</string>
+	<string name="powered_by_jkl_tech">Powered by JKL Technologies</string>
 	
 </resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/greeting_linear_layout">
+    
+    	<RelativeLayout 
+		    android:id="@+id/greeting_base_relative"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true">
+		    
+			<RelativeLayout 
+			    android:id="@+id/greeting_text_view_relative"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true">
+			    
+				<RelativeLayout 
+	       			android:id="@+id/greeting_text_relative" 
+	       			android:layout_width="wrap_content" 
+	       			android:layout_height="wrap_content"
+	       			android:layout_centerInParent="true"
+	       			> 
+			    
+		    		<TextView
+			    		android:id="@+id/greeting_text" 
+			    		android:layout_width="wrap_content" 
+			    		android:layout_height="wrap_content"
+			    		android:gravity="center_horizontal"/>
+				</RelativeLayout>
+				
+				<ImageView 
+					android:id="@+id/app_icon_image"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@+id/greeting_text_relative"
+				    android:layout_centerVertical="true"/>
+				
+			    <ImageView 
+				    android:id="@+id/smiley_image"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/greeting_text_relative"
+				    android:layout_centerVertical="true">
+			    </ImageView>
+			    
+		</RelativeLayout>
+	</RelativeLayout>
+
+</RelativeLayout>
