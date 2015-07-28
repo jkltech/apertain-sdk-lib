@@ -20,6 +20,22 @@
             android:layout_centerInParent="true"/>
         
     </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/unread_text_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       	android:layout_marginTop="10dip"
+       	>
+        
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/unread_text"
+	            android:layout_centerInParent="true"/>
+            
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/wrapper"
@@ -27,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:gravity="left"
-        android:paddingTop="10dip" >
+        >
 
     <RelativeLayout
         android:id="@+id/bubble"

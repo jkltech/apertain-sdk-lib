@@ -20,14 +20,14 @@
             android:layout_centerInParent="true"/>
         
     </RelativeLayout>
-
+    
     <LinearLayout
         android:id="@+id/wrapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:gravity="right"
-        android:paddingTop="10dip" >
+        >
 
     <RelativeLayout
         android:id="@+id/bubble"
