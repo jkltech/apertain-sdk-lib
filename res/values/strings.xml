@@ -98,4 +98,6 @@
 	<string name="jkl_tech_credit">Special Thanks: JKL Technologies Pvt Ltd</string>
 	<string name="powered_by_jkl_tech">Powered by JKL Technologies</string>
 	
+	<string name="unread_message">Unread Message</string>
+	<string name="unread_messages">Unread Messages</string>
 </resources>

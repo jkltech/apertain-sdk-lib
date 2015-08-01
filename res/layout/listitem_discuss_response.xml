@@ -7,7 +7,7 @@
     android:gravity="left"
     android:orientation="vertical" >
     
-     <RelativeLayout
+    <!-- <RelativeLayout
         android:id="@+id/date_text_relative"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-       	android:layout_marginTop="10dip"
        	>
         
             <TextView 
@@ -35,7 +34,9 @@
 	            android:id="@+id/unread_text"
 	            android:layout_centerInParent="true"/>
             
-    </RelativeLayout>
+    </RelativeLayout> -->
+    
+    
 
     <LinearLayout
         android:id="@+id/wrapper"
@@ -49,7 +50,10 @@
         android:id="@+id/bubble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="3dip"
         android:gravity="left" >
     
         <RelativeLayout
