@@ -47,13 +47,13 @@
     <string name="apertain_rating_error">We\'re unable to find this app in the store. Please visit the store to find and rate it.</string>
 
     <string name="apertain_intro_dialog_title_no_love">@string/apertain_were_sorry</string>
-    <string name="apertain_intro_dialog_title_default">Thanks for your feedback!</string>
-    <string name="apertain_intro_dialog_title_1">Glad to Connect with You!</string>
-    <string name="apertain_intro_dialog_title_2">Welcome to App Support Chatter!</string>
-    <string name="apertain_intro_dialog_title_3">Thanks for Connecting with us!</string>
-    <string name="apertain_intro_dialog_title_4">We are here to Help!</string>
-    <string name="apertain_intro_dialog_title_5">Glad we could Help You!</string>
-    <string name="apertain_intro_dialog_title_6">We are here for You!</string>
+    <string name="apertain_intro_dialog_title_default">Thanks For Your Feedback!</string>
+    <string name="apertain_intro_dialog_title_1">Glad To Connect With You!</string>
+    <string name="apertain_intro_dialog_title_2">Welcome To App Support Chatter!</string>
+    <string name="apertain_intro_dialog_title_3">Thanks For Connecting With Us!</string>
+    <string name="apertain_intro_dialog_title_4">We Are Here To Help!</string>
+    <string name="apertain_intro_dialog_title_5">Glad We Could Help You!</string>
+    <string name="apertain_intro_dialog_title_6">We Are Here For You!</string>
     <string name="apertain_intro_dialog_body">Please let us know how to make %s better for you!</string>
     <string name="apertain_intro_dialog_edittext_hint">Tell us how we can help. (Required)</string>
 
@@ -86,7 +86,7 @@
     <string name="apertain_rating_provider_no_amazon_appstore">Amazon Appstore was not found. Please install Amazon Appstore before rating this app.</string>
     <string name="apertain_rating_provider_no_mikandi">MiKandi Market was not found. Please install MiKandi Market before rating this app.</string>
 	<string name="apertain_more">More&#8230;</string>
-	<string name="load_more">Load more Conversation</string>
+	<string name="load_more">Load More Conversations</string>
 	<string name="apertain_not_yet_sent">Scheduled&#8230;</string>
 	<string name="apertain_sent">Sent.</string>
 	<string name="apertain_viewed">Seen.</string>
@@ -95,6 +95,7 @@
 	
 	<!-- <string name="powered_by_apertain">Powered by A(P)ertain</string> -->
 	<string name="inapp_support_welcome_message">Welcome to Support %s, \n Let us know how we can Help you Today!</string>
+	<string name="support_welcome_message">Welcome to %s Support, \n Let us know, How we can help you Today?</string>
 	<string name="jkl_tech_credit">Special Thanks: JKL Technologies Pvt Ltd</string>
 	<string name="powered_by_jkl_tech">Powered by JKL Technologies</string>
 	
