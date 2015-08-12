@@ -22,7 +22,7 @@
        			android:id="@+id/greeting_text_relative" 
        			android:layout_width="wrap_content" 
        			android:layout_height="wrap_content"
-       			android:layout_centerInParent="true"
+       			android:layout_gravity="center_vertical"
        			> 
 		    
 	    		<TextView
