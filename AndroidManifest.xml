@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jkl.apertain"
-    android:versionCode="2015012801"
-    android:versionName="1.2.4" >
+    android:versionCode="2016010601"
+    android:versionName="2.1.4" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="23" />
 
 	<uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- To get device unique ID -->
-    <!-- Optional Permissions -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To get user name and email -->
+    <!-- Optional Permissions - ->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!- - To get user name and email - ->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    -->
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/apertain_app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:configChanges="keyboardHidden|orientation"
+        android:windowSoftInputMode="adjustResize">
 
         <activity
             android:name=".MainActivity"
@@ -50,6 +54,12 @@
         
         <service android:name="com.jkl.apertain.service.UploadService"></service>
 
+        <activity
+            android:name="com.jkl.apertain.ui.InAppSupportActivity"
+            android:label="@string/title_activity_in_app_support" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        	android:windowSoftInputMode="adjustResize">>
+        </activity>
     </application>
 
 </manifest>

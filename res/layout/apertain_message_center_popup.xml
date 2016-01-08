@@ -47,7 +47,7 @@
 	         android:id="@+id/apertain_message_center_popup_greeting_relative" 
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
-	         android:layout_alignParentLeft="true"
+	         android:layout_centerHorizontal="true"
 	         android:layout_below="@id/apertain_message_center_topbar_relative">
 		
 			<TextView
