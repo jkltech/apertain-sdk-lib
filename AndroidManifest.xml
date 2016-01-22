@@ -24,16 +24,7 @@
         android:configChanges="keyboardHidden|orientation"
         android:windowSoftInputMode="adjustResize">
 
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/apertain_app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+		<!--
         <receiver 
             android:name="com.jkl.apertain.util.NetworkChangeReciver" 
             android:label="NetworkChangeReceiver">
@@ -42,24 +33,26 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
             </intent-filter>
         </receiver>
-        
-        <!-- receiver 
+        -->
+
+		<!--
+        <receiver 
             android:name="com.jkl.apertain.util.APertainBroadcastReceiver"
-        	android:enabled="false">
+        	android:enabled="true">
     		<intent-filter>
         		<action android:name="android.intent.action.BOOT_COMPLETED"/>
         		<action android:name="android.intent.action.PACKAGE_ADDED"/>
     		</intent-filter>
-		</receiver> -->
-        
-        <service android:name="com.jkl.apertain.service.UploadService"></service>
+		</receiver>
+		-->
 
-        <activity
+        <!-- service android:name="com.jkl.apertain.service.UploadService"></service> -->
+        <!-- <activity
             android:name="com.jkl.apertain.ui.InAppSupportActivity"
             android:label="@string/title_activity_in_app_support" 
             android:configChanges="keyboardHidden|orientation|screenSize"
         	android:windowSoftInputMode="adjustResize">>
-        </activity>
+        </activity> -->
     </application>
 
 </manifest>
