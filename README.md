@@ -64,6 +64,8 @@ Whenever a positive experience occurred (eg., Level Completion in a game or Achi
 
 	Example: Apertain.logUserXp(this, "WorkoutComplete", Apertain.POSITIVEXP);
 
+Here, the [Event_Name] is used as a User Experience Parameter which can be further used in Rules defined for Pertain Engine as well as Smart Rating & Feedback Prompts..
+
 ### 3.2 Recording a Negative User Experience
 
 When a user gets a negative experience (eg., Level Failed or invalid process input) you can add this code to record the negative experience for the user.
@@ -99,7 +101,8 @@ When the Rating Prompt shows up, it takes the user to rate your app in Play Stor
 
 
 	if (aPertainInstance != null) {
-		aPertainInstance.showRatingFlowIfConditionsAreMet();
+		aPertainInstance.showRatingFlowIfConditionsAreMet("<User Experience Parameter>");
+		// Empty String in the above method means a cumulative Positive Experience Count.
 	}
 
 ### 5. A(P)ertain App Support Chatter Interface
