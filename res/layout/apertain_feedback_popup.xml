@@ -55,7 +55,7 @@
 		    android:gravity="top"
 		    android:layout_below="@id/apertain_feedback_sub_heading_tv" />
 		
-		<Button 
+		<!-- <Button 
 		    android:id="@+id/apertain_feedback_popup_yes_button"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
@@ -67,8 +67,33 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_alignParentLeft="true"
-		    android:layout_below="@id/apertain_feedback_content_et" />
-	
+		    android:layout_below="@id/apertain_feedback_content_et" /> -->
+		<RelativeLayout 
+		    android:id="@+id/apertain_feedback_popup_yes_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@id/apertain_feedback_content_et">
+		    <TextView
+		        android:id="@+id/apertain_feedback_popup_yes_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center">
+		    </TextView>
+		</RelativeLayout>
+		<RelativeLayout
+		    android:id="@+id/apertain_feedback_popup_no_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/apertain_feedback_content_et" >
+		    <TextView 
+		        android:id="@+id/apertain_feedback_popup_no_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"/>
+		</RelativeLayout>    
+		    
 		<TextView
         	android:id="@+id/apertain_feedback_popup_powered_by_apertain_tv"
         	android:layout_width="wrap_content"

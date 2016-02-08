@@ -25,7 +25,7 @@
 	        android:layout_centerHorizontal="true"
 	        android:layout_below="@id/apertain_rating_popup_heading_tv" />
 		
-		<Button 
+		<!--  <Button 
 		    android:id="@+id/apertain_rating_popup_rate_now_button"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
@@ -44,7 +44,51 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_centerHorizontal="true"
-		    android:layout_below="@id/apertain_rating_popup_rate_later_button" />
+		    android:layout_below="@id/apertain_rating_popup_rate_later_button" />-->
+		    
+		<RelativeLayout
+		    android:id="@+id/apertain_rating_popup_rate_now_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/apertain_rating_popup_tv" >
+		    <TextView
+		      	android:id="@+id/apertain_rating_popup_rate_now_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center" > 
+		    </TextView>
+		</RelativeLayout>
+	
+		<RelativeLayout 
+		    android:id="@+id/apertain_rating_popup_rate_later_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/apertain_rating_popup_rate_now_button">
+		    <TextView
+		      	android:id="@+id/apertain_rating_popup_rate_later_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center" > 
+		    </TextView>
+		</RelativeLayout>
+	
+		<RelativeLayout
+		    android:id="@+id/apertain_rating_popup_no_thanks_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/apertain_rating_popup_rate_later_button" >
+		    <TextView
+		    	android:id="@+id/apertain_rating_popup_no_thanks_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerHorizontal="true"
+		    	android:layout_centerVertical="true"
+		    	android:gravity="center" >    
+		    </TextView>
+		</RelativeLayout>
 
 		<TextView
         	android:id="@+id/apertain_rating_popup_powered_by_apertain_tv"

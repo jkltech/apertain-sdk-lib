@@ -25,22 +25,54 @@
 		    android:layout_height="wrap_content"
 		    android:layout_below="@id/apertain_love_popup_tv" >
 			
-		    <Button 
+		    <!-- <Button 
 			    android:id="@+id/apertain_love_popup_yes_button"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:layout_alignParentRight="true"
-			    android:textSize="@dimen/apertain_text_large" />
-			    <!-- android:layout_below="@id/apertain_love_popup_tv" /> -->
+			    android:textSize="@dimen/apertain_text_large" 
+			    android:layout_below="@id/apertain_love_popup_tv" /> -->
 		
-			<Button 
+			<!-- <Button 
 			    android:id="@+id/apertain_love_popup_no_button"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:layout_alignParentLeft="true"
-			    android:textSize="@dimen/apertain_text_large" />
-				<!-- android:layout_below="@id/apertain_love_popup_tv" /> -->
-		    	    
+			    android:textSize="@dimen/apertain_text_large" 
+				android:layout_below="@id/apertain_love_popup_tv" />  -->
+				
+			<RelativeLayout 
+			    android:id="@+id/apertain_love_popup_yes_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true">
+			    <TextView
+			        android:id="@+id/apertain_love_popup_yes_button_text"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:text="@string/apertain_yes"
+				    android:textSize="@dimen/apertain_text_large">
+		    	</TextView>
+		    </RelativeLayout>
+		    
+			<RelativeLayout 
+			    android:id="@+id/apertain_love_popup_no_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true">
+			    <TextView
+			        android:id="@+id/apertain_love_popup_no_button_text"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:gravity="center"
+				    android:text="@string/apertain_no"
+				    android:textSize="@dimen/apertain_text_large">
+		    	</TextView>
+		   </RelativeLayout>
+			    	    
 		</RelativeLayout>
 		
 		<RelativeLayout
