@@ -82,13 +82,13 @@ When a user gets a Neutral experience (neither positive or negative) you can add
 
 	Example: Apertain.logUserXp(this, "NameEntered", Apertain.NEUTRALXP);
 
-### 4. Rating Prompt Flow Configuration
+### 4. Smart Rating Prompt Configuration
 
 In-App Rating Prompt Flow an intelligent program flow that shows the Rating Prompt to each user according to their behavior & past experiences within the App/Game. The prompt flow is shown based on the experience user has gained in the App/Game according to the configuration made by the developer in A(P)ertain SaaS backend.
 
-### 4.1 Showing Rating Prompt Flow
+### 4.1 Showing Smart Rating Prompt
 
-The following code shows the Rating Prompt Flow when the conditions as configured in A(P)ertain SaaS backend are met. 
+The following code shows the Smart Rating Prompt when the conditions as configured in A(P)ertain SaaS backend are met. 
 
 When the Rating Prompt shows up, it takes the user to rate your app in Play Store (or Amazon App Store). Use the following code to show the Rating Prompt as the related conditions are met. This can be called from any part/process of your activity where you like to show the Rating Prompt.
 
@@ -104,12 +104,20 @@ When the Rating Prompt shows up, it takes the user to rate your app in Play Stor
 		aPertainInstance.showRatingFlowIfConditionsAreMet("<User Experience Parameter>");
 		// Empty String in the above method means a cumulative Positive Experience Count.
 	}
+	
+If you would just like to show your rating prompt from a menu item or your own smart conditions, please use the following code,
 
-### 5. A(P)ertain App Support Chatter Interface
+	if (aPertainInstance != null) {
+		aPertainInstance.showRatingPrompt();
+	}
 
-A(P)ertain App Support Chatter Interface provides a means messenger style communication (conversation) interface for the user and the Mobile Developer. The below code provides a native A(P)ertain Support Chatter icon view which when clicked will open up the App Support Chatter Interface. 
+As showing the Rating Prompt popup will invade the flow of your App, if you would like to pause and resume your underlying Activity or Fragment code, please implement the ResumableActivity with methods pauseActivity() and resumeActivity() to add a callback for pausing and resuming the underlying activity or Fragment. 
 
-As a developer you can place this view in any layout of your choice to let the user open up the App Support Chatter Interface.
+### 5. A(P)ertain App Support Chat Interface
+
+A(P)ertain App Support Chat Interface provides a means messenger style communication (conversation) interface for the user and the Mobile Developer. The below code provides a native A(P)ertain Support icon view which when clicked will open up the App Support Chat Interface. 
+
+As a developer you can place this view in any layout of your choice to let the user open up the App Support Chat Interface.
 
 	Apertain aPertainInstance = null;
 	try {
@@ -121,11 +129,13 @@ As a developer you can place this view in any layout of your choice to let the u
 	View view = aPertainInstance.getAppSupportChatterView();
 	layout.addView(view);
 
-Most developers add the App Support Chatter Icon to the layout defining their own Action Bar for the App/Game.
+Most developers add the App Support Chat Icon to the layout defining their own Action Bar for the App/Game.
 
-Alternatively you can have your own icon to show the Support Chatter Interface and add the click listener to that layout or button and call the following code inside onClick:
+Alternatively you can have your own icon to show the Support Chat Interface and add the click listener to that layout or button and call the following code inside onClick:
 
 	aPertainInstance.showApertainAppSupportChatter(); 
+
+As showing the In-App Support Chat will invade the flow of your App, if you would like to pause and resume your underlying Activity or Fragment code, please implement the ResumableActivity with methods pauseActivity() and resumeActivity() to add a callback for pausing and resuming the underlying activity or Fragment.
 
 ### 6. Tracking Activities & Processes
 
