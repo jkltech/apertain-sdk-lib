@@ -67,6 +67,9 @@
     <string name="apertain_message_center_title">Message Center</string>
     <string name="apertain_message_center_compose_hint">Type a message…</string>
     <string name="apertain_message_center_attachment_title">Send image?</string>
+    <string name="apertain_offline_rating_title">Title</string>
+    <string name="apertain_offline_rating_description">Description</string>
+    <string name="submit">SUBMIT</string>
 
     <!-- This is a Java format. -->
     <string name="apertain_message_sent_timestamp_format">MMM dd, yyyy h:mma</string>
