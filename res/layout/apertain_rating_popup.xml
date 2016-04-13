@@ -22,7 +22,7 @@
 	        android:id="@+id/apertain_rating_popup_tv"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentLeft="true"
 	        android:layout_below="@id/apertain_rating_popup_heading_tv" />
 		
 		<!--  <Button 

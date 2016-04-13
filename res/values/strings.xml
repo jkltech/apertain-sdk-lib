@@ -19,6 +19,7 @@
     <string name="apertain_thanks">Thanks!</string>
     <string name="apertain_no_thanks">No thanks</string>
     <string name="apertain_thank_you">Thank You</string>
+    <string name="apertain_offline_rating_ui_title">Submit Your Review</string>
     <string name="apertain_were_sorry">We\'re Sorry!</string>
     <string name="apertain_required">Required</string>
     <string name="apertain_optional">Optional</string>
@@ -70,6 +71,14 @@
     <string name="apertain_offline_rating_title">Title</string>
     <string name="apertain_offline_rating_description">Description</string>
     <string name="submit">SUBMIT</string>
+    <string name="powered_by_apertain">Powered by A(P)ertain</string>
+    <string name="hated_it">Hated it</string>
+    <string name="disliked_it">Disliked it</string>
+    <string name="its_ok">It\'s OK</string>
+    <string name="liked_it">Liked it</string>
+    <string name="loved_it">Loved it</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
 
     <!-- This is a Java format. -->
     <string name="apertain_message_sent_timestamp_format">MMM dd, yyyy h:mma</string>
