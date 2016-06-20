@@ -17,4 +17,8 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="popwin_anim_style">  
+		<item name="android:windowEnterAnimation">@anim/menushow</item>  
+		<item name="android:windowExitAnimation">@anim/menuhide</item>  
+	</style> 
 </resources>

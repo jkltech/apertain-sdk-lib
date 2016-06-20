@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/apertain_social_share_popup_base_relative"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+    <RelativeLayout 
+        android:id="@+id/apertain_social_share_popup_content_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        
+        <RelativeLayout 
+	        android:id="@+id/apertain_social_share_popup_heading_relative"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+        
+	        <TextView 
+	            android:id="@+id/apertain_social_share_popup_heading_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+        
+    	</RelativeLayout>
+    
+	    <RelativeLayout 
+	        android:id="@+id/apertain_social_share_popup_et_relative"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/apertain_social_share_popup_heading_relative" >
+	    
+		    <EditText 
+		        android:id="@+id/apertain_social_share_popup_edittext"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:maxLength="138" 
+		        android:minLines="4"     
+		        android:gravity="top" />
+		    	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/apertain_social_share_popup_share_on_relative"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/apertain_social_share_popup_et_relative">
+	        
+	    <RelativeLayout 
+	        android:id="@+id/apertain_social_share_popup_share_on_tv_relative"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentLeft="true">
+			
+			<TextView 
+				android:id="@+id/apertain_social_share_popup_share_on_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true" >
+			</TextView>
+				
+	    </RelativeLayout>
+	
+	    <RelativeLayout 
+	        android:id="@+id/apertain_social_share_popup_buttons_relative"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/apertain_social_share_popup_share_on_tv_relative" >
+			
+			<Button
+			    android:id="@+id/apertain_social_share_popup_button1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" />
+	
+			<Button
+			    android:id="@+id/apertain_social_share_popup_button2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/apertain_social_share_popup_button1" />
+			
+			<Button
+			    android:id="@+id/apertain_social_share_popup_button3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/apertain_social_share_popup_button2" />	
+	        
+	    </RelativeLayout>
+	    
+	    </RelativeLayout>
+
+	    <RelativeLayout 
+	        android:id="@+id/apertain_social_share_popup_apertain_credits"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/apertain_social_share_popup_share_on_relative" >
+	        
+	        <TextView 
+				android:id="@+id/apertain_social_share_popup_apertain_credits_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+	        
+	    </RelativeLayout>
+        
+    </RelativeLayout>
+</RelativeLayout>

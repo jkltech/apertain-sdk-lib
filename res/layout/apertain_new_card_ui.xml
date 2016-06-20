@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.app.chasebank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:id="@+id/apertain_new_card_ui_base">
+ 
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/apertain_new_card_ui_slider_pager"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentTop="true" />
+
+	    <!-- com.viewpagerindicator.CirclePageIndicator
+	        android:id="@+id/apertain_new_card_ui_slider_indicator"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="bottom"
+	        android:padding="10dip"
+	        app:centered="true"
+	        app:fillColor="#d73232"
+	        app:pageColor="#d73232"
+	        app:snap="true" /-->
+	        
+	    <RelativeLayout 
+	        android:id="@+id/pager_indicator_relative"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true">
+	        
+	        <RelativeLayout 
+	            android:id="@+id/skip_button_relative"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true">
+	            
+	            <TextView 
+	                android:id="@+id/skip_button"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"/>
+	            
+	        </RelativeLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/apertain_new_card_ui_slider_indicator"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_centerHorizontal="true"
+	            android:layout_alignParentBottom="true"
+	            android:gravity="center"
+	            android:orientation="horizontal" />
+	        
+	        <RelativeLayout 
+	            android:id="@+id/next_button_relative"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true">
+            
+            	<TextView 
+                	android:id="@+id/next_button"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_centerVertical="true"/>
+            
+        	</RelativeLayout>
+	        
+	    </RelativeLayout>    
+	    
+	    <!-- RelativeLayout 
+            android:id="@+id/previous_button_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true">
+            
+            <Button 
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+            
+        </RelativeLayout-->
+        
+	</RelativeLayout>
+
+</LinearLayout>

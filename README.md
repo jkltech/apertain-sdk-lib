@@ -1,7 +1,7 @@
-A(P)ertain SDK v1.0 for Android - Getting Started
+A(P)ertain SDK v2.2.3 for Android - Getting Started
 =================================================
 
-This document describes how to get started using the A(P)ertain SDK v1.0 for Android.
+This document describes how to get started using the A(P)ertain SDK v2.2.3 for Android.
 
 Before you Begin
 ----------------
@@ -201,3 +201,80 @@ Please enter the below tags within the Application tag of your App to enable the
 	    android:name="com.jkl.apertain.service.UploadService"
 	    android:label="UploadService" >
 	</service>
+
+### 8. Social Share
+
+Social Media is a wonderful way to let your Users Engage with their friends as well as publicize your App on your behalf among their network of friends.
+
+To easily enable this type of sharing among Users, we have provided an intuitive User Interface. It is designed as a Popup that contains the share buttons on your interested Social Networks. Clicking this button allows users to share links and descriptions directly to Social Networks such as Twitter, Facebook & WhatsApp.
+
+**NOTE**: We only Support the above Social Networks now!
+
+If one of these social networks is not installed in the Device it will show default share options E-Mail & Messaging.
+
+If the Device any of the above Social Networks and E-Mail & Messaging is also unavailable, then it would show up with “Device doesn’t have Supported Sharing Options” as a Toast Message.
+
+This User Interface can be initiated with this function call having Four arguments:
+
+1. Arg 1: Integer array of String Resource array that mention the social network software.
+2. Arg 2 : String Resource that mention the App URL or any other to be shared URL.
+3. Arg 3 : String Resource that mention Text to share.
+4. Arg 4(Optional) : String Resource that mention Subject. Use this only if you want to share via E-Mail.
+
+Example:
+
+	int[] shareArray = {R.string.facebook, R.string.twitter, R.string.whatsapp};
+	int url = R.string.sharing_app_url;
+	int textToBeShared = R.string.text_to_be_share;
+	int emailSubject = R.string.subject_to_share;
+	   			 
+	if (apertainInstance != null)
+	{
+		apertainInstance.showSocialSharePopupUI(shareArray, url, textToBeShare);
+	
+(or)
+
+		apertainInstance.showSocialSharePopupUI(shareArray, url, textToBeShared, emailSubject);
+	}
+
+### 9. Customer On-Boarding UI
+
+All Applications need a relevant on-boarding User Interface to explain What the App is about and How to use the App. Customer on-boarding is nothing but an inituitive way to introduce the App’s premise to the end users. This interface is your chance to inform, to inspire, and to get the user excited about using your App. This is one of the commonly used aspects of "User Experience" (UX) design, but is often overlooked by the App Developer.
+
+The Customer On-Boarding UI will be used as a self explanatory introduction to your application. A(P)ertain provides a powerful On-Boarding UI which is completely customizable. All you have to do is to decide how many Screens needed for the app intro and choose of Images, Title Text, Description and Background color for each Screen respectively. 
+
+Here is the Sample UI of a single screen in A(P)ertain On-Boarding UI.
+
+![Image of Customer On-boarding UI Design Sample](https://apertain.com/app/prd/api/customer_onboarding_ui_sample.jpg)
+
+## A(P)ertain OnBoardingUI has Four arguments:
+
+1. Integer array of resource that mention images for each page.
+2. Integer array of resource that mention Title text for each page.
+3. Integer array of resource that mention Description Text for each page.
+4. Integer array of resource that mention Background colors for each page.
+
+The array size determines the number of Screens in the Customer On-Boarding UI. For example the array for each argument is four, you will get four Screens.
+
+**NOTE**: It is recommended to keep the On-Boarding UI to 3-5 intriguing screenshot or usage introductions.
+
+## Use the following import for FragmentManager:
+
+	import android.support.v4.app.FragmentManager;
+
+## To get the A(P)ertain Customer On-Boarding UI use the following code snippet: 
+
+	int[] bgImages = {R.drawable.food, R.drawable.movie};
+	int[] bgColors = {R.color.color1, R.color.color2, R.color.color3, R.color.color4};
+	int[] titleText = {R.string.title1, R.string.title2, R.string.title3, R.string.title4};
+	int[] descriptionText = {R.string.description1, R.string.description2, R.string.description3, R.string.description4};
+
+	private void moveToAPertainOnBoardingFragment()
+	{
+		FragmentManager fragmentmanager = getFragmentManager();
+		ShowUserOnboardUIFragment onboardingUIFragment = 
+		new ShowUserOnboardUIFragment(bgImages, titleText, descriptionText, bgColors);
+		onboardingUIFragment.setCancelable(false);
+		onboardingUIFragment.show(fragmentmanager, null);	
+	}
+
